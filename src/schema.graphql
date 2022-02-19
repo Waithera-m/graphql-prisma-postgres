@@ -34,4 +34,6 @@ type Mutation {
     login(email: String!, password: String!): AuthPayload
 }
 
-
+type Subscription {
+    newLink: Link
+}

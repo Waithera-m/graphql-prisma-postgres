@@ -1,0 +1,526 @@
+SELECT * FROM users ;
+SELECT * FROM users ;
+SELECT * FROM users ;
+\dt
+SELECT * FROM pitches ;
+SELECT * FROM pitches ;
+\q
+\c pitches
+\dt
+SELCET * FROM pitches ;
+SELECT * FROM pitches ;
+SELECT * FROM pitches ;
+SELECT * FROM users ;
+SELECT * FROM pitches ;
+\dt
+SELECT * FROM comments ;
+SELECT * FROM comments ;
+SELECT * FROM comments ;
+SELECT * FROM comments ;
+SELECT * FROM users ;
+SELECT * FROM comments ;
+TRUNCATE comments;
+SELECT * FROM comments ;
+SELECT * FROM comments ;
+SELECT * FROM comments ;
+SELECT * FROM users ;
+SELECT * FROM pitches ;
+\q
+CREATE DATABASE pomodoro;
+\c pomodoro
+\dt
+SELECT * FROM users ;
+SELECT * FROM users ;
+SELECT * FROM users ;
+SELECT * FROM users ;
+SELECT * FROM users ;
+SELECT * FROM users ;
+SELECT * FROM users ;
+\dt
+SELECT * FROM users ;
+\q
+\c pomodoro
+SELECT * FROM users ;
+SELECT * FROM users ;
+SELECT * FROM users ;
+SELECT * FROM users ;
+SELECT * FROM users ;
+SELECT * FROM users ;
+\q
+\c pomodoro
+\q
+CREATE DATABASE partage;
+\c partage
+\dt
+SELECT * FROM tags ;
+SELECT * FROM blogs ;
+\dt
+\dt
+\dt
+\q
+CREATE DATABASE paratage_test WITH TEMPLATE partage;
+\c partage
+SELECT * FROM users ;
+TRUNCATE users;
+SELECT * FROM users ;
+DELETE FROM partage WHERE id=1;
+DELETE FROM users WHERE ID = 1;
+SELECT * FROM users ;
+SELECT * FROM users ;
+SELECT * FROM users ;
+\dt
+\dt
+SELECT * FROM blogs ;
+SELECT * FROM posts ;
+SELECT * FROM posts ;
+SELECT * FROM users ;
+SELECT * FROM posts ;
+SELECT * FROM posts ;
+\q
+\partage
+\c partage
+SELECT * FROM users ;
+SELECT * FROM posts ;
+\dt
+SELECT * FROM comments ;;
+SELECT * FROM users ;
+SELECT * FROM comments ;
+SELECT * FROM users ;
+\dt
+SELECT * FROM posts ;
+SELECT * FROM posts ;
+\q
+CREATE DATABASE dementia
+\c dementia
+CREATE DATABASE dementia;
+\dt
+CREATE DATABASE dementia;
+\c dementia
+\dt
+SELECT * FROM user;
+SELECT * FROM users ;
+\dt
+DROP TABLE user;
+\dt
+DROP TABLE user ;
+DROP TABLE user;
+\q
+DROP DATABASE dementia;
+\q
+DROP DATABASE dementia;
+CREATE DATABASE dementia;
+\c dementia
+\dt
+\dt
+\dt
+SELECT * FROM comments ;
+SELECT * FROM comments ;
+\q
+DROP DATABASE dementia;
+CREATE DATABASE dementia;
+\c
+\c dementia
+\q
+\c dementia
+\dt
+SELECT * FROM users ;
+\q
+CREATE DATABASE tribune;
+\c tribune
+\dt
+\dt
+SELECT * FROM news_editor ;
+SELECT * FROM news_editor ;
+SELECT * FROM news_editor ;
+SELECT * FROM news_editor ;
+SELECT * FROM news_editor ;
+\dt
+\dt
+SELECT * FROM news_editor ;
+SELECT * FROM news_article ;
+\q
+\c tribune
+\dt
+SELECT * FROM news_article ;
+SELECT * FROM news_article ;
+SELECT * FROM news_article ;
+ALTER TABLE news_article DROP COLUMN article_image;
+SELECT * FROM news_article ;
+SELECT * FROM django_migrations ;
+DELETE FROM django_migrations WHERE id=23
+mk
+exit()
+;
+DELETE FROM django_migrations WHERE id=23;
+SELECT * FROM django_migrations ;
+SELECT * FROM django_migrations ;
+DELETE FROM django_migrations WHERE id=24;
+SELECT * FROM django_migrations ;
+SELECT * FROM news_article ;
+ALTER TABLE news_article DROP COLUMN article_image;
+\dt
+SELECT * FROM django_migrations ;
+DELETE FROM django_migrations WHERE id=25;
+ALTER TABLE news_article DROP COLUMN article_image;
+SELECT * FROM news_article ;
+\q
+.schema
+exit()
+\q
+.schema
+\c db.sqlite3
+\q
+CREATE DATABASE portfolio;
+\c portfolio
+\dt
+\dt
+\dt
+SELECT * FROM projects_repo ;
+SELECT * FROM projects_repo ;
+\q
+\dt
+\d
+\l
+\q
+CREATE DATABASE collage;
+\c collage
+\dt
+\dt
+\q
+\c collage
+\dt
+\dt
+\dt
+SELECT * FROM pictures_image
+b;
+SELECT * FROM pictures_image ;
+\q
+\c collage
+\dt
+SELECT * FROM pictures_image_category ;
+SELECT * FROM pictures_image ;
+SELECT * FROM pictures_image ;
+SELECT * FROM pictures_image ;
+SELECT * FROM pictures_image_categoty ;
+SELECT * FROM pictures_image_category ;
+\q
+\c collage
+SELECT * FROM pictures_image ;
+SELECT * FROM pictures_location ;
+\q
+\c collage
+SELECT * FROM pictures_location ;
+SELECT * FROM pictures_image ;
+SELECT * FROM pictures_location ;
+SELECT * FROM pictures_category ;
+\q
+\c tribune
+\dt
+SELECT * FROM news_editor ;
+TRUNCATE TABLE news_editor ;
+SELECT * FROM auth_user ;
+DELETE FROM news_editor WHERE id=3;
+DELETE FROM news_article WHERE id=3;
+DELETE FROM news_article_tags WHERE id=3;
+DELETE FROM news_article WHERE id=3;
+DELETE FROM news_article_tags WHERE id=3;
+DELETE FROM news_article WHERE id=3;
+DELETE FROM news_article WHERE id=3;
+DELETE FROM news_article_tags WHERE id=3;
+SELECT * FROM news_article_tags ;
+SELECT * FROM news_article ;
+SELECT * FROM news_article ;
+\dt
+SELECT * FROM news_admin_log ;
+SELECT * FROM django_admin_log ;
+SELECT * FROM auth_user ;
+SELECT * FROM news_article ;
+SELECT * FROM news_article ;
+\q
+CREATE DATABASE couch_it;
+\q
+CREATE DATABASE snap;
+\q
+\c snap
+\dt
+\dt
+\dt
+SELECT * FROM profiles_image ;;
+SELECT * FROM profiles_profile ;
+SELECT * FROM profiles_profile ;
+\q
+\c snap
+SELECT * FROM profiles_profile ;
+\dt
+SELECT * FROM profiles_profile ;
+SELECT * FROM profiles_profile ;
+\q
+\c tribune
+\dt
+SELECT * FROM news_article ;
+\q
+\c snap
+SELECT * FROM profiles_profile ;
+SELECT * FROM profiles_profile ;
+SELECT * FROM profiles_profile ;
+SELECT * FROM profiles_profile ;
+SELECT * FROM profiles_profile ;
+SELECT * FROM profiles_profile ;
+SELECT * FROM profiles_profile ;
+SELECT * FROM profiles_profile ;
+SELECT * FROM profiles_profile ;
+\dt
+SELECT * FROM auth_user ;
+SELECT * FROM profiles_profile ;
+TRUNCATE TABLE profiles_profile;
+TRUNCATE TABLE profiles_profile CASCADE;
+TRUNCATE TABLE profiles_profile;
+SELECT * FROM profiles_profile ;
+TRUNCATE TABLE profiles_profile;
+SELECT * FROM profiles_profile ;
+SELECT * FROM auth_user ;
+SELECT * FROM profiles_image ;
+SELECT * FROM profiles_profile ;
+SELECT * FROM profiles_profile ;
+SELECT * FROM profiles_image ;
+SELECT * FROM profiles_image ;
+SELECT * FROM profiles_profile ;
+SELECT * FROM auth_user ;
+SELECT * FROM profiles_image ;
+\q
+\c snap
+\dt
+SELECT * FROM profiles_profile ;
+SELECT * FROM profiles_profile_following ;
+SELECT * FROM profiles_profile_following ;
+\q
+q
+\q
+CREATE DATABASE reddit;
+\c reddit
+\dt
+\q
+CREATE DATABASE project_rater;
+\c project_rater
+\dt
+\q
+\c project_rater
+\dt
+\dt
+\dt
+\dt
+\dt
+\q
+CREATE DATABASE awards;
+\c awards
+\dt
+\dt
+\dt
+SELECT * FROM projects_profile ;
+\q
+\c awards
+\dt
+SELECT * FROM projects_project ;
+SELECT * FROM projects_project ;
+SELECT * FROM projects_project ;
+\dt
+SELECT * FROM projects_votest ;
+SELECT * FROM projects_votes ;
+\q
+\c awards
+\dt
+SELECT * FROM projects_project ;
+\q
+CREATE DATABASE maps;
+\c maps
+CREATE EXTENSION postgis;
+\c
+\q
+\c maps
+CREATE EXTENSION postgis;
+\c
+\q
+\c
+\dt
+\c maps
+\dt
+\q
+CREATE DATABASE poolers;
+\q
+\c poolers
+]dt
+\dt
+SELECT * FROM spatial_ref_sys ;
+SELECT * FROM spatial_ref_sys ;
+SELECT * FROM users_driver ;
+SELECT * FROM users_driver ;
+\d
+\q
+DROP DATABASE poolers;
+CREATE DATABASE poolers;
+\c poolers
+\q
+\l
+\c portfolio
+\dt
+SELECT * FROM projects_repo
+;
+\q
+create database digilearns;
+\c
+\q
+create database digiLearns
+;
+create database Digi;
+\c Digi
+\q
+CREATE DATABASE learndigi;
+\c
+\dt
+\c learndigi
+\dt
+\dt
+SELECT * FROM edutech_student ;
+DELECT FROM edutech_student WHERE id=1;
+DELETE FROM edutech_student WHERE id=1;
+SELECT * FROM edutech_student ;
+SELECT * FROM edutech_student ;
+SELECT * FROM edutech_student ;
+\q
+\c digilearns
+\dt
+select * from ussd_sessionlookup ;
+\q
+\c learndigi
+\dt
+\dt
+select * from edutech_topicquiz ;
+\q
+\c learndigi
+\dt
+edutech_topicquiz_questions
+;
+select 
+* from edutech_topicuiz_questions;
+select * from edutech_topicquiz_questions
+;
+\q
+\c learndigi
+\dt
+select * from ussd_sessionlookup ; 
+select * from edutech_student ;; 
+select * from edutech_attemptedquestions ; 
+select * from edutech_quizanswers ; 
+\q
+\c learndigi
+\dt
+select * from edutech_student;
+select * from edutech_student;
+select * from edutech_student;
+select * from edutech_student;
+select * from edutech_student;
+select * from edutech_student;
+select * from edutech_student;
+select * from edutech_student;
+\dt
+\dt
+\dt ussd_sessionlookup
+\t ussd_sessionlookup
+\d ussd_sessionlookup
+\d django_sessions
+\d django_session
+select * from ussd_sessionlookup limit 1
+;
+\dt
+select * from edutech_usersessions ;
+select * from edutech_usersessions ;
+select * from edutech_usersessions ;
+\dt
+select * from edutech_usersessions ;
+select * from edutech_student;
+\q
+\c learndigi
+\dt
+select * from edutech_usersessions ;
+select * from edutech_usersessions ;
+select * from edutech_usersessions ;
+select * from edutech_usersessions ;
+select * from edutech_student ;
+select * from edutech_usersessions ;
+select * from edutech_student ;
+select * from edutech_usersessions ;
+select * from edutech_student ;
+\q
+\c digilearns
+select * from edutech_usersessions ;
+\dt
+\q
+\c learndigi
+select * from edutech_usersessions ;
+select * from edutech_student ;
+select * from edutech_student ;
+select * from edutech_usersessions ;
+select * from edutech_usersessions ;
+select * from edutech_student ;
+select * from edutech_usersessions ;
+select * from edutech_subtopics;;
+select * from edutech_subtopics ;
+\dt
+select * from edutech_subtopic ;
+select * from edutech_usersessions ;
+select * from edutech_student ;
+\dt
+select * from edutech_topic ;
+select * from edutech_subtopic ;
+select * from edutech_content ;
+select * from edutech_content ;
+select * from edutech_student ;
+select * from edutech_usersessions ;
+\q
+\c learndigi
+select * from edutech_usersessions
+;
+\q
+CREATE DATABASE blogify;
+\q
+\c learndigi
+\dt
+select * from edutech_content ;
+\q
+create database trydocker;
+\q
+create database postgres;
+create database second;
+ALTER USER mary WITH PASSWORD 'pixie01';
+create database third;
+create database e-products;
+create database eproducts;
+\q
+create database moairtime_db;
+\q
+CREATE DATABASE insta;
+\q
+psql -a
+psql --echo-all
+postgresql
+-U
+psql -U
+psql -d database -/u mary -W
+\l
+psql -d watchlist_test
+psql -a
+psql --echo-all
+postgresql
+-U
+psql -U
+psql -d watchlist_test -/u mary -W
+\dt
+\d comments
+\dn
+\df
+\du
+SELECT version();
+\g
+SELECT version();
+\s
+\s pastcommands

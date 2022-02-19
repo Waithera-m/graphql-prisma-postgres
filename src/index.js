@@ -61,7 +61,7 @@ const resolvers = {
         name: 'DateTime',
         description: "valid date time value",
         parseValue: value => new Date(value),
-        serialize: value => new Date(value).toString(),
+        serialize: value => new Date(value).toISOString(),
         parseLiteral: ast => ast
     })
 }

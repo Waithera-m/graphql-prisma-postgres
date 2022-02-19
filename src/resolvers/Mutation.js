@@ -13,21 +13,23 @@ async function signup(parent, args, context, info) {
 }
 
 async function login(parent, args, context, info) {
-    const user = await context.prisma.user.findUnique({
-        where: {
-            email: args.email
-        }
+    const user = await context.prisma.user.findUnique({ 
+        where: { 
+            email: args.email 
+        } 
     })
     if (!user) {
-        throw new Error("User with the provided email does not exist")
-    } else {
-        const valid = await bcrypt.compare(args.password, user.password)
-        if (!valid) {
-            throw new Error('Invalid password')
-        } else {
-            const token = jwt.sign({ userId: user.id }, APP_SECRET)
-            return { token, user, }
-        }
+      throw new Error('No such user found')
+    }
+    const valid = await bcrypt.compare(args.password, user.password)
+    if (!valid) {
+      throw new Error('Invalid password')
+    }
+    
+    const token = jwt.sign({ userId: user.id }, APP_SECRET)
+    return {
+      token,
+      user,
     }
 }
 

@@ -69,4 +69,29 @@ async function deleteLink(parent, args, context) {
     })
 }
 
-module.exports = { signup, login, post, updateLink, deleteLink, }
+async function vote(parent, args, context, info) {
+    const userId = context.userId
+    console.log("user? ", userId)
+    const vote = await context.prisma.vote.findUnique({
+        where: {
+            linkId_userId: {
+                linkId: +args.linkId,
+                userId: userId
+            }
+        }
+    })
+    if (Boolean(vote) == true) {
+        throw new Error(`Vote cast already: ${args.linkId}`)
+    }
+    console.log("userId: ", +userId)
+    const newVote = context.prisma.vote.create({
+        data: {
+            user: { connect: {id: +userId} },
+            link: { connect: { id: +args.linkId } }
+        }
+    })
+    context.pubsub.publish("NEW_VOTE", newVote)
+    return newVote
+}
+
+module.exports = { signup, login, post, updateLink, deleteLink, vote }

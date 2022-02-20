@@ -10,6 +10,7 @@ const User = require('./resolvers/User')
 const Link = require('./resolvers/Link')
 const DateTime = require('./resolvers/DateTime')
 const Subscription = require('./resolvers/Subscription')
+const Vote = require('./resolvers/Vote')
 
 const prisma = new PrismaClient()
 const pubsub = new PubSub()
@@ -19,7 +20,8 @@ const resolvers = {
     Mutation,
     Subscription,
     User,
-    Link
+    Link,
+    Vote
 }
 
 const server = new ApolloServer({

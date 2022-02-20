@@ -71,7 +71,6 @@ async function deleteLink(parent, args, context) {
 
 async function vote(parent, args, context, info) {
     const userId = context.userId
-    console.log("user? ", userId)
     const vote = await context.prisma.vote.findUnique({
         where: {
             linkId_userId: {
@@ -83,7 +82,6 @@ async function vote(parent, args, context, info) {
     if (Boolean(vote) == true) {
         throw new Error(`Vote cast already: ${args.linkId}`)
     }
-    console.log("userId: ", +userId)
     const newVote = context.prisma.vote.create({
         data: {
             user: { connect: {id: +userId} },
